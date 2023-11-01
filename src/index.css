@@ -5,6 +5,8 @@
 body {
 	margin: 0;
 	font-family: Inter, sans-serif;
+	height: 100vh;
+	background: #282d35;
 }
 
 .navbar {
@@ -49,33 +51,43 @@ body {
 	flex-direction: column;
 	justify-content: left;
 	align-items: left;
-	margin-bottom: 2rem;
-	background: #282d35;
+	height: 100%;
+	padding: 57px 27px;
+	color: #ffffff;
+	background-image: url(./assets/react-icon-large.png);
+	background-repeat: no-repeat;
+	background-position: right 75%;
 }
 
 .main-title {
+	margin: 0;
 	font-size: 39px;
 	font-weight: 700;
 	line-height: 47px;
 	letter-spacing: -0.05em;
 	text-align: left;
-	color: #ffffff;
-}
-
-.bullet-list > li {
-	list-style-image: url(./assets/ellipse-1.png);
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 19px;
-	letter-spacing: 0em;
-	text-align: left;
-	color: #ffffff;
 }
 
 .bullet-list {
+	margin-top: 46px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	margin-bottom: 2rem;
+}
+
+.bullet-list > li {
+	/* list-style-image: url(./assets/ellipse-1.png); */
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	padding-block: 10px;
+}
+
+.bullet-list > li::marker {
+	font-size: 1.4rem;
+	color: #61dafb;
 }
