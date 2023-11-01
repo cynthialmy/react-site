@@ -1,69 +1,81 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	margin: 0;
+	font-family: Inter, sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.navbar {
+	display: flex;
+	align-items: center;
+	background: #21222a;
+	height: 90px;
+	padding: 30px 25px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.react-logo {
+	pointer-events: none;
+	width: 30px;
+	height: 30px;
+	top: 31px;
+	left: 26px;
+	padding: 2.21px, 0.62px, 2.21px, 0.62px;
+	margin-right: 7px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.navbar-title {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 27px;
+	letter-spacing: -0.05em;
+	text-align: left;
+	color: #61dafb;
+	margin-right: auto;
+}
+
+.navbar-content {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: right;
+	color: #deebf8;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	margin-bottom: 2rem;
+	background: #282d35;
+}
+
+.main-title {
+	font-size: 39px;
+	font-weight: 700;
+	line-height: 47px;
+	letter-spacing: -0.05em;
+	text-align: left;
+	color: #ffffff;
+}
+
+.bullet-list > li {
+	list-style-image: url(./assets/ellipse-1.png);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #ffffff;
+}
+
+.bullet-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 2rem;
 }
