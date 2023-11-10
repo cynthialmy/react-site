@@ -1,11 +1,19 @@
-import logo from "../src/assets/react-icon-small.png";
-
-export default function Navbar() {
+export default function Navbar(props) {
 	return (
-		<nav className="navbar">
-			<img className="react-logo" src={logo} alt="React Logo" />
-			<h1 className="navbar-title">ReactFacts</h1>
-			<h1 className="navbar-content">React Course - Project 1</h1>
+		<nav className={props.darkMode ? "dark" : ""}>
+			<img
+				className="nav--logo_icon"
+				src="../src/assets/react-icon-small.png"
+			/>
+			<h3 className="nav--logo_text">ReactFacts</h3>
+
+			<div className="toggler">
+				<p className="toggler--light">Light</p>
+				<div className="toggler--slider" onClick={props.toggleDarkMode}>
+					<div className="toggler--slider--circle"></div>
+				</div>
+				<p className="toggler--dark">Dark</p>
+			</div>
 		</nav>
 	);
 }
